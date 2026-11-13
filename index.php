@@ -2,18 +2,12 @@
 
 declare(strict_types=1);
 
-// Автозагрузка классов по пространствам имён (соответствует PSR-4 / структуре папок)
-spl_autoload_register(function (string $class): void {
-    $file = __DIR__ . DIRECTORY_SEPARATOR . str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-    if (file_exists($file)) {
-        require_once $file;
-    }
-});
+require_once __DIR__ . '/vendor/autoload.php';
 
-use src\Book;
-use src\Magazine;
-use src\Reader;
-use src\Enums\Status;
+use App\Book;
+use App\Magazine;
+use App\Reader;
+use App\Enums\Status;
 
 echo 'Оцифровка библиотеки...' . PHP_EOL;
 
