@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace App\Models;
 
-use src\Exceptions\LimitExceededException;
+use App\Exceptions\LimitExceededException;
 
 class Reader
 {

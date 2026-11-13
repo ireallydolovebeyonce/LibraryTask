@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use App\Book;
-use App\Magazine;
-use App\Reader;
 use App\Enums\Status;
+use App\Models\Book;
+use App\Models\Magazine;
+use App\Models\Reader;
 
 echo 'Оцифровка библиотеки...' . PHP_EOL;
 

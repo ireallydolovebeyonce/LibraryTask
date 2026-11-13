@@ -14,5 +14,7 @@
             "email": "maksimownaliza@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "nesbot/carbon": "^3.15"
+    }
 }

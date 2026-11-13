@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace App\Models;
 
-use src\Enums\Status;
-use src\Exceptions\ItemNotAvailableException;
-use src\Exceptions\InvalidReturnException;
-use src\Interfaces\Borrowable;
-use src\Traits\Logger;
+use App\Enums\Status;
+use App\Exceptions\InvalidReturnException;
+use App\Exceptions\ItemNotAvailableException;
+use App\Interfaces\Borrowable;
+use App\Traits\Logger;
 
 abstract class LibraryItem implements Borrowable
 {

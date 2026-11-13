@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Interfaces;
 
-use src\Reader;
+use App\Models\Reader;
 
 interface Borrowable
 {
