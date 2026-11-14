@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace src\Interfaces;
+namespace App\Interfaces;
 
-use src\Reader;
+use App\Models\Reader;
 
 interface Borrowable
 {
